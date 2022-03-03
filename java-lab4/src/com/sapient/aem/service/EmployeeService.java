@@ -3,10 +3,7 @@ package com.sapient.aem.service;
 import com.sapient.aem.bean.Employee;
 
 public interface EmployeeService {
-	public Employee getEmpDetails();
-	public String insuranceScheme(String designation,double Salary);
-	public void EmpDetails(Employee emp);
-	
-	
-
+	public abstract Employee getEmployeeDetails();
+	public abstract InsuranceScheme getInsuranceScheme(Employee employee);
+	public abstract void showEmployeeDetails(Employee employee);
 }
